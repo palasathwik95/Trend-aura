@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="primary">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TREND AURA - Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio id="myAudio">
+        <source src="audio.mp3" type="audio/mpeg">
+    </audio>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let audio = document.getElementById("myAudio");
+
+            // Try playing audio when the page loads
+            let playPromise = audio.play();
+
+            if (playPromise !== undefined) {
+                playPromise.then(() => {
+                    // Autoplay success
+                    console.log("Audio is playing...");
+                }).catch(() => {
+                    // Autoplay blocked, waiting for user interaction
+                    console.log("Autoplay blocked. Waiting for user interaction...");
+                    document.addEventListener("click", playAudioOnce, { once: true });
+                });
+            }
+
+            function playAudioOnce() {
+                audio.play();
+                audio.onended = function () {
+                    audio.remove(); // Remove after it plays once
+                };
+            }
+        });
+    </script>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <nav class="navbar bg-body-tertiary">
+                <a class="navbar-brand" href="products.html">
+                    <img src="ta logo.jpg" alt="Bootstrap" width="50" height="50">
+                  </a>
+              </nav>
+            <a class="navbar-brand" href="index.html">TREND AURA</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="all1.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="orgcheckout.html">cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <form class="d-flex mx-auto" id="searchForm">
+                <input class="form-control me-2" type="search" placeholder="Search products..." aria-label="Search" id="searchInput">
+                <button class="btn btn-luxury btn-success" type="submit">Search</button>
+            </form>
+            <ul class="navbar-nav ms-auto">
+    </nav>
+    <div>
+        <video width="100%" autoplay loop muted>
+            <source src="opening2.mp4" type="video/mp4">
+        </video>
+    </div>
+    <br><br>
+    <div class="nav-container">
+        <a href="design.html" class="nav-button design">Design Your Dress</a>
+        <a href="ai.html" class="nav-button ai">AI Recommendations</a>
+        <a href="all1.html" class="nav-button buy">Buy from Products</a>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="category-card">
+                    <img src="front1.jpg" class="img-fluid" alt="Bags"><br>
+                    <div class="category-overlay">
+                        <h3>Traditionals</h3>
+                        <a href="traditional1.html" class="btn btn-luxury btn-info">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="category-card">
+                <img src="front3.jpg" class="img-fluid" alt="Shoes" height="700px" width="527px">
+                    <div class="category-overlay">
+                        <h3>Formal</h3>
+                        <a href="formal1.html" class="btn btn-luxury btn-info">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="category-card">
+                    <img src="front5.jpg" class="img-fluid" alt="Accessories" height="700px" width="527px"><br>
+                    <div class="category-overlay">
+                        <h3>Briefs & vests</h3>
+                        <a href="brief1.html" class="btn btn-luxury btn-info">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="col-md-4 mb-4">
+                <div class="category-card">
+                    <img src="front4.jpg" class="img-fluid" alt="Bags" height="700px" width="527px"><br>
+                    <div class="category-overlay">
+                        <h3>Trendy wear</h3>
+                        <a href="trendy1.html" class="btn btn-luxury btn-info">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="category-card">
+                    <img src="front6.jpg" class="img-fluid" alt="Bags" height="700px" width="527px"><br>
+                    <div class="category-overlay">
+                        <h3>Accessories</h3>
+                        <a href="access1.html" class="btn btn-luxury btn-info">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="category-card">
+                    <img src="frontnew.jpg" class="img-fluid" alt="Bags" height="700px" width="527px"><br>
+                    <div class="category-overlay">
+                        <h3>Footwear</h3>
+                        <a href="footy1.html" class="btn btn-luxury btn-info">Shop Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+                    <h5>Follow Us</h5>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/products.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

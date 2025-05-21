@@ -1,0 +1,212 @@
+:root {
+    --luxury-gold: #D4AF37;
+    --luxury-black: #1a1a1a;
+    --luxury-white: #a34748;
+    --luxury-blue:white;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: var(--luxury-black);
+    color: var(--luxury-white);
+}
+
+.navbar {
+    background-color: var(--luxury-black) !important;
+    border-bottom: 1px solid var(--luxury-gold);
+}
+
+.navbar-brand {
+    color: var(--luxury-gold) !important;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.nav-link {
+    color: var(--luxury-gold) !important;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--luxury-blue) !important;
+}
+
+.hero-section {
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content {
+    z-index: 1;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.product-card {
+    background: var(--luxury-black);
+    border: 1px solid var(--luxury-gold);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    height: 300px;
+    object-fit: cover;
+}
+
+.btn-luxury {
+    background-color: var(--luxury-gold);
+    color: var(--luxury-black);
+    border: none;
+    padding: 10px 25px;
+    transition: all 0.3s ease;
+}
+
+.btn-luxury:hover {
+    background-color: var(--luxury-black);
+    color: var(--luxury-gold);
+    border: 1px solid var(--luxury-gold);
+}
+
+.footer {
+    background-color: var(--luxury-black);
+    border-top: 1px solid var(--luxury-gold);
+    padding: 40px 0;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.form-control {
+    background-color: var(--luxury-black);
+    border: 1px solid var(--luxury-gold);
+    color: var(--luxury-blue);
+}
+
+.form-control:focus {
+    background-color: var(--luxury-black);
+    border-color: var(--luxury-gold);
+    box-shadow: 0 0 0 0.2rem rgba(212, 175, 55, 0.25);
+    color: var(--luxury-blue);
+}
+
+.category-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.category-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.category-card:hover .category-overlay {
+    opacity: 1;
+}
+
+.social-icons a {
+    color: var(--luxury-gold);
+    margin-right: 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--luxury-white);
+}
+body {
+    background-image: url('DALL·E\ 2025-03-12\ 22.16.29\ -\ A\ simple\,\ light-themed\ luxury\ fashion\ store\ background.\ The\ image\ features\ a\ sleek\ white\ gradient\ with\ subtle\ gold\ accents.\ Minimalist\ display\ shelves.webp');
+    background-size: cover; /* Ensures it covers the screen */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps it stable on scroll */
+}
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #333;
+    color: white;
+    z-index: 1000; /* Keeps it above other elements */
+}
+.nav-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.nav-button {
+    padding: 15px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.design {
+    background-color: #3e088b;
+    color: white;
+}
+.ai {
+    background-color: #3e088b;
+    color: white;
+}
+.buy {
+    background-color: #3e088b;
+    color: white;
+}
+.nav-button:hover {
+    opacity: 0.8;
+}
+a{
+    text-decoration: none;
+}
+.button-container {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+  }
+  .button-link {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+  }
+  .home-link {
+    background-color: rgb(19, 19, 114);
+  }
+  .home-link:hover {
+    background-color:  darkgreen;
+  }
+  .products-link {
+    background-color:  rgb(19, 19, 114);
+  }
+  .products-link:hover {
+    background-color: darkgreen;
+  }
+  
