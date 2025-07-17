@@ -1,0 +1,160 @@
+<div class="col">
+        <div class="card">
+          <img src="85.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Max</h5><br>
+            <p class="card-text">$78</p>
+          </div>
+          <a href="payment.html" class="button-link home-link">Buy now</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="86.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Easy buy</h5><br>
+            <p class="card-text"> $98</p>
+          </div>
+          <a href="payment.html" class="button-link home-link">Buy now</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="87.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">DNMX</h5><br>
+            <p class="card-text">$69</p>
+          </div>
+          <a href="payment.html" class="button-link home-link">Buy now</a>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="88.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">H&M</h5><br>
+            <p class="card-text">$95.</p>
+          </div>
+          <a href="payment.html" class="button-link home-link">Buy now</a>
+        </div>
+      </div>
+      <div class="col">
+          <div class="card">
+            <img src="89.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Zara</h5><br>
+              <p class="card-text">$77</p>
+            </div>
+            <a href="payment.html" class="button-link home-link">Buy now</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="90.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">jack&jones</h5><br>
+              <p class="card-text">$88</p>
+            </div>
+            <a href="payment.html" class="button-link home-link">Buy now</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="91.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Levi's</h5><br>
+              <p class="card-text">$97.</p>
+            </div>
+            <a href="payment.html" class="button-link home-link">Buy now</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="92.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">puma</h5><br>
+              <p class="card-text">$54</p>
+            </div>
+            <a href="payment.html" class="button-link home-link">Buy now</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="93.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nike</h5><br>
+              <p class="card-text">$85</p>
+            </div>
+            <a href="payment.html" class="button-link home-link">Buy now</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="94.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Gucci</h5><br>
+              <p class="card-text">$45</p>
+            </div>
+            <a href="payment.html" class="button-link home-link">Buy now</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="95.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Reedbook</h5><br>
+              <p class="card-text">$89</p>
+            </div>
+            <a href="payment.html" class="button-link home-link">Buy now</a>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="96.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">adidas</h5><br>
+              <p class="card-text">$90</p>
+            </div>
+            <a href="payment.html" class="button-link home-link">Buy now</a>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card">
+              <img src="97.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Allen Solly</h5>
+                <p class="card-text">$89</p>
+              </div>
+              <a href="payment.html" class="button-link home-link">Buy now</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="98.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Lee</h5>
+                <p class="card-text">$85</p>
+              </div>
+              <a href="payment.html" class="button-link home-link">Buy now</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="99.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Burberry</h5>
+                <p class="card-text">$78</p>
+              </div>
+              <a href="payment.html" class="button-link home-link">Buy now</a>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="100.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">American Eagle</h5>
+                <p class="card-text">$97</p>
+              </div>
+              <a href="payment.html" class="button-link home-link">Buy now</a>
+            </div>
+          </div>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Designer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #tshirt-preview {
+            width: 250px;
+            height: 300px;
+            background-color: black;
+            border: 2px solid #000;
+            position: relative;
+            text-align: center;
+        }
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        #final-design {
+            margin-top: 20px;
+            display: none;
+            text-align: center;
+        }
+        #final-image {
+            border: 2px solid #000;
+            width: 250px;
+            height: 300px;
+        }
+        body {
+            background-image: url('DALL·E\ 2025-03-12\ 22.16.29\ -\ A\ simple\,\ light-themed\ luxury\ fashion\ store\ background.\ The\ image\ features\ a\ sleek\ white\ gradient\ with\ subtle\ gold\ accents.\ Minimalist\ display\ shelves.webp');
+            background-size: cover; /* Ensures it covers the screen */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /* Keeps it stable on scroll */
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="text-center">Customize Your Dress</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label">Body Size (S/M/L/XL)</label>
+                        <input type="text" id="bodySize" class="form-control" placeholder="Enter size">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Chest (in inches)</label>
+                        <input type="number" id="chestSize" class="form-control" placeholder="Enter chest size">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Waist (in inches)</label>
+                        <input type="number" id="waistSize" class="form-control" placeholder="Enter waist size">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">T-Shirt Color</label>
+                        <input type="color" id="tshirtColor" class="form-control form-control-color">
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="updateTShirt()">Apply Design</button>
+                    <button type="button" class="btn btn-danger" onclick="clearCanvas()">Clear Drawing</button>
+                    <button type="button" class="btn btn-success" onclick="saveDesign()">Save Design</button>
+                </form>
+            </div>
+            <div class="col-md-6 text-center">
+                <h4>Preview</h4>
+                <div id="tshirt-preview">
+                    <canvas id="designCanvas"></canvas>
+                </div>
+            </div>
+        </div>
+        <div id="final-design">
+            <h4>Final Design</h4>
+            <img id="final-image" src="" alt="Your T-Shirt Design">
+        </div>
+    </div>
+
+    <script>
+        let canvas = document.getElementById("designCanvas");
+        let ctx = canvas.getContext("2d");
+        let painting = false;
+
+        function resizeCanvas() {
+            canvas.width = document.getElementById("tshirt-preview").clientWidth;
+            canvas.height = document.getElementById("tshirt-preview").clientHeight;
+        }
+        resizeCanvas();
+
+        function startPosition(e) {
+            painting = true;
+            draw(e);
+        }
+
+        function endPosition() {
+            painting = false;
+            ctx.beginPath();
+        }
+
+        function draw(e) {
+            if (!painting) return;
+            ctx.lineWidth = 2;
+            ctx.lineCap = "round";
+            let tshirtColor = document.getElementById("tshirtColor").value;
+            ctx.strokeStyle = (tshirtColor === "#000000") ? "white" : "black";
+            ctx.lineTo(e.offsetX, e.offsetY);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.moveTo(e.offsetX, e.offsetY);
+        }
+
+        canvas.addEventListener("mousedown", startPosition);
+        canvas.addEventListener("mouseup", endPosition);
+        canvas.addEventListener("mousemove", draw);
+
+        function updateTShirt() {
+            let tshirtColor = document.getElementById("tshirtColor").value;
+            document.getElementById("tshirt-preview").style.backgroundColor = tshirtColor;
+        }
+
+        function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function saveDesign() {
+            let finalImage = document.getElementById("final-image");
+            finalImage.src = canvas.toDataURL("image/png");
+            document.getElementById("final-design").style.display = "block";
+        }
+    </script>
+</body>
+</html>
